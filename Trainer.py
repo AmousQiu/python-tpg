@@ -287,7 +287,6 @@ class Trainer:
                 # Retrieve the Agent's action. Standard action selection. Even if using a non-standard
                 # action-selection mechanism, this needs to be executed to operate on the Memory.
                 action = agent.act(state.reshape(-1))
-
                 if Trainer.ACTION_SELECTION != TRAINER_ACTION_STANDARD:
                     
                     # Act on memory

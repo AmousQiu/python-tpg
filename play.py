@@ -47,7 +47,7 @@ def run(arguments):
             action = np.random.normal(mu, 0.1)
 
         # Perform action and get next state
-        state, reward, is_done, debug = env.step(action)
+        state, reward, is_done, debug = env.step([action])
 
         score += reward
 
