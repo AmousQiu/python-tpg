@@ -1,9 +1,9 @@
-#!/usr/bin/env python
+#usr/bin/env python
 import numpy as np
 import matplotlib.pyplot as plt
-data = np.load('mc_top.npy')
+data = np.load('ll_top.npy')
 print(data)
 plt.plot(data)
 plt.xlabel('Generation')
-plt.ylabel('Average Score')
+plt.ylabel('Top Score')
 plt.show()
